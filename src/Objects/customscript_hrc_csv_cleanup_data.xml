@@ -1,0 +1,68 @@
+<scheduledscript scriptid="customscript_hrc_csv_cleanup_data">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>HRC CSV Cleanup Data</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/HRC CSV Cleanup.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_last_processed_file_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Last Processed File Id</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_hrc_csv_cleanup_data">
+      <custscript_last_processed_file_id></custscript_last_processed_file_id>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>HRC CSV Cleanup Data</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2025-03-21</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy2">
+      <custscript_last_processed_file_id></custscript_last_processed_file_id>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>HRC CSV Cleanup Data 2</title>
+      <recurrence>
+        <yearly>
+          <repeat></repeat>
+          <startdate>2025-04-02</startdate>
+          <starttime>01:00:00Z</starttime>
+        </yearly>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>
