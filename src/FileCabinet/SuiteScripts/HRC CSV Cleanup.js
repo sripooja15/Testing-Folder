@@ -7,8 +7,7 @@ var folderId = 64994; // Replace with actual folder ID
 define(["N/record", "N/runtime", "N/search", "N/file", "N/task", "N/format"], function(record, runtime, search, file, task, format) {
     function execute(scriptContext) {
         try {
-            //new comment again
-            //Added new commnet branch testing
+            
             log.debug("Triggered Scheduled Script");
             var scriptObj = runtime.getCurrentScript();
             //var testDate = '2025-07-21'; // Change this for testing
